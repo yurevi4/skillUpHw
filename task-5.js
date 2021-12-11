@@ -1,6 +1,9 @@
-const stateDelivery = prompt('Введите название страны для доставки');
+let stateDelivery = prompt('Введите название страны для доставки');
 
-switch(stateDelivery) {
+let selectedState = stateDelivery.toLowerCase();
+selectedState = stateDelivery[0].toUpperCase() + selectedState.slice(1);
+
+switch(selectedState) {
     case 'China': alert('Доставка в Вашу страну будет стоить 150 кредитов');
     break
     case 'Chile': alert('Доставка в Вашу страну будет стоить 250 кредитов');
